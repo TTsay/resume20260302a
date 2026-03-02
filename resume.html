@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>王曉華 - 個人履歷</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+}
+
+.container {
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.header {
+    text-align: center;
+    border-bottom: 2px solid #444;
+    padding-bottom: 20px;
+}
+
+.header h1 {
+    margin: 10px 0;
+    font-size: 32px;
+}
+
+.section {
+    margin-top: 30px;
+}
+
+.section h2 {
+    border-left: 5px solid #444;
+    padding-left: 10px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+.hidden {
+    display: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>王曉華</h1>
+        <p>亞洲大學學生 | 學號: AU114001001</p>
+        <p>目標：未來成為專業廚師，並創業開設咖啡館</p>
+    </div>
+
+    <div class="section">
+        <h2>基本資料</h2>
+        <p>學校：亞洲大學</p>
+        <p>年級：一年級</p>
+        <p>年齡：23歲</p>
+    </div>
+
+    <div class="section">
+        <h2>技能</h2>
+        <ul>
+            <li>基礎文書處理（Word、PowerPoint）</li>
+            <li>基本程式設計能力</li>
+            <li>良好溝通能力</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>興趣</h2>
+        <ul>
+            <li>打球</li>
+            <li>餐飲與咖啡研究</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>自我介紹</h2>
+        <p id="introText">
+            我是一位亞洲大學一年級學生，對餐飲產業充滿熱情，
+            未來希望成為一名專業廚師，並開設屬於自己的咖啡館。
+        </p>
+
+        <button onclick="toggleIntro()">顯示/隱藏自我介紹</button>
+    </div>
+
+</div>
+
+<script>
+function toggleIntro() {
+    var intro = document.getElementById("introText");
+    intro.classList.toggle("hidden");
+}
+</script>
+
+</body>
+</html>
