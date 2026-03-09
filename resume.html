@@ -6,60 +6,89 @@
 <title>王曉華 - 個人履歷</title>
 
 <style>
-body {
+
+body{
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #ece9e6, #ffffff);
+    margin:0;
+    background:linear-gradient(to right,#ece9e6,#ffffff);
 }
 
-.container {
-    width: 80%;
-    margin: 30px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+.container{
+    width:80%;
+    max-width:900px;
+    margin:40px auto;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
 }
 
-.header {
-    text-align: center;
-    border-bottom: 2px solid #444;
-    padding-bottom: 20px;
+.header{
+    text-align:center;
+    border-bottom:2px solid #444;
+    padding-bottom:25px;
 }
 
-.header h1 {
-    margin: 10px 0;
-    font-size: 32px;
+.profile-photo{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #eee;
+    margin-bottom:15px;
 }
 
-.section {
-    margin-top: 30px;
+.header h1{
+    margin:10px 0;
+    font-size:34px;
 }
 
-.section h2 {
-    border-left: 5px solid #444;
-    padding-left: 10px;
+.header p{
+    margin:5px 0;
+    color:#555;
 }
 
-button {
-    margin-top: 20px;
-    padding: 10px 15px;
-    background-color: #444;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+.section{
+    margin-top:35px;
 }
 
-button:hover {
-    background-color: #666;
+.section h2{
+    border-left:6px solid #444;
+    padding-left:10px;
+    margin-bottom:15px;
 }
 
-.hidden {
-    display: none;
+ul{
+    line-height:1.8;
 }
+
+button{
+    margin-top:15px;
+    padding:10px 15px;
+    background:#444;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#666;
+}
+
+.hidden{
+    display:none;
+}
+
+.footer{
+    text-align:center;
+    margin-top:40px;
+    color:#888;
+    font-size:14px;
+}
+
 </style>
+
 </head>
 
 <body>
@@ -67,52 +96,85 @@ button:hover {
 <div class="container">
 
     <div class="header">
+
+        <img src="img/photo.jpg" class="profile-photo" alt="profile photo">
+
         <h1>王曉華</h1>
-        <p>亞洲大學學生 | 學號: AU114001001</p>
+
+        <p>亞洲大學學生</p>
+        <p>學號：AU114001001</p>
+
         <p>目標：未來成為專業廚師，並創業開設咖啡館</p>
+
     </div>
+
 
     <div class="section">
         <h2>基本資料</h2>
+
         <p>學校：亞洲大學</p>
         <p>年級：一年級</p>
         <p>年齡：23歲</p>
+
     </div>
+
 
     <div class="section">
         <h2>技能</h2>
+
         <ul>
             <li>基礎文書處理（Word、PowerPoint）</li>
-            <li>基本程式設計能力</li>
+            <li>基本 HTML / CSS / JavaScript</li>
+            <li>資料處理與基礎程式能力</li>
             <li>良好溝通能力</li>
         </ul>
+
     </div>
+
 
     <div class="section">
         <h2>興趣</h2>
+
         <ul>
             <li>打球</li>
             <li>餐飲與咖啡研究</li>
+            <li>學習新技術</li>
         </ul>
+
     </div>
+
 
     <div class="section">
         <h2>自我介紹</h2>
+
         <p id="introText">
-            我是一位亞洲大學一年級學生，對餐飲產業充滿熱情，
-            未來希望成為一名專業廚師，並開設屬於自己的咖啡館。
+        我是一位亞洲大學一年級學生，目前正在學習程式設計與資料處理。
+        我對餐飲與咖啡產業非常有興趣，未來希望成為一名專業廚師，
+        並創立自己的咖啡館品牌。
         </p>
 
-        <button onclick="toggleIntro()">顯示/隱藏自我介紹</button>
+        <button onclick="toggleIntro()">顯示 / 隱藏 自我介紹</button>
+
+    </div>
+
+
+    <div class="footer">
+        © 2026 王曉華 Resume
     </div>
 
 </div>
 
+
 <script>
-function toggleIntro() {
-    var intro = document.getElementById("introText");
+
+function toggleIntro(){
+
+    var intro=document.getElementById("introText");
+
     intro.classList.toggle("hidden");
+
 }
+
 </script>
 
 </body>
